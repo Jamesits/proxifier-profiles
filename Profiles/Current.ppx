@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxifierProfile version="101" platform="MacOSX" product_id="2" product_minver="200">
+    <Options>
+        <Resolve>
+            <AutoModeDetection enabled="true"/>
+            <ViaProxy enabled="false">
+                <TryLocalDnsFirst enabled="false"/>
+            </ViaProxy>
+            <ExclusionList ExcludeSimpleHostnames="true" ExcludeLocalhost="true" ExcludeSelfHostname="true" ExcludeLocalDomain="true">localhost;%SimpleHostnames%;%ComputerName%;*.local;
+</ExclusionList>
+        </Resolve>
+        <Encryption mode="basic"/>
+        <HttpProxiesSupport enabled="true"/>
+        <HandleDirectConnections enabled="false"/>
+        <ConnectionLoopDetection enabled="true"/>
+        <ProcessServices enabled="true"/>
+        <ProcessOtherUsers enabled="true"/>
+    </Options>
+    <ProxyList>
+        <Proxy id="100" type="SOCKS5">
+            <Address>localhost</Address>
+            <Port>1080</Port>
+            <Options>0</Options>
+        </Proxy>
+    </ProxyList>
+    <ChainList/>
+    <RuleList>
+        <Rule enabled="true">
+            <Name>Proxy Softwares</Name>
+            <Applications>"ShadowsocksX"; "GoAgentX"; cow; meow; shadowsocks*; ss*; openconnect; "Cisco AnyConnect"; "com.avast.proxy"; privoxy; polipo; proxychains*</Applications>
+            <Action type="Direct"/>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Localhost</Name>
+            <Targets>localhost; 127.0.0.1; ::1; %ComputerName%; James-MBP.local</Targets>
+            <Action type="Direct"/>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Chinese CDNs</Name>
+            <Targets>*.ccgslb.com.cn; *.qiniu.com; *.clouddn.com; *.qbox.me; *.staticfile.org; *.upyun.com; *.upaiyun.com; *.upai.com; *.cdnjs.cn; libs.baidu.com; *.baidupcs.com; cdn.geekzu.org; mirrors.ustc.edu.cn; *.lug.ustc.edu.cn; lib.sinaapp.com; libs.useso.com; *.taobao.org;</Targets>
+            <Action type="Direct"/>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Thunder</Name>
+            <Applications>"Thunder"</Applications>
+            <Action type="Direct"/>
+        </Rule>
+        <Rule enabled="true">
+            <Name>RDP</Name>
+            <Applications>"Microsoft Remote Desktop"</Applications>
+            <Action type="Direct"/>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Google Desktop Softwares</Name>
+            <Applications>"Google Photos Backup"; "Google Music"; "Google Drive"; "Picasa"</Applications>
+            <Targets>*.google.com; *.gstatic.com; *.googleusercontent.com</Targets>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
+            <Name>SourceTree</Name>
+            <Applications>"SourceTree"</Applications>
+            <Targets>*.atlassian.com; *.sourcetreeapp.com</Targets>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
+            <Name>brew</Name>
+            <Applications>brew; curl</Applications>
+            <Targets>homebrew.bintray.com; dl.bintray.com; *.brew.sh; *.caskroom.io</Targets>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
+            <Name>TeamViewer</Name>
+            <Applications>"TeamViewer"</Applications>
+            <Targets>*.teamviewer.com</Targets>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Atom</Name>
+            <Applications>"Atom"; "Atom Helper"; apm; npm</Applications>
+            <Targets>*.atom.io</Targets>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Steam</Name>
+            <Applications>"Steam"; steam_osx; "Steam Helper"</Applications>
+            <Targets>*.steampowered.com; *.steamcommunity.com</Targets>
+            <Action type="Direct"/>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Steam CDN</Name>
+            <Applications>"Steam"; steam_osx; "Steam Helper"</Applications>
+            <Targets>cdn.akamai.steamstatic.com</Targets>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Telegram</Name>
+            <Applications>"Telegram"</Applications>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Netease Music</Name>
+            <Applications>"NeteaseMusic"</Applications>
+            <Action type="Direct"/>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Microsoft Office</Name>
+            <Applications>"Microsoft Word"; "Microsoft Excel"; "Microsoft PowerPoint"; "Microsoft OneNote"; "Microsoft Outlook"; "Microsoft Activity Monitor"; "Microsoft Error Reporting"; "Microsoft Ship Asserts"; "Office365ServiceV2"; "Outlook Profile Manager"; "Open XML for Excel"</Applications>
+            <Targets>*.live.com; *.live.net; *.skyprod.akadns.net; *.cloudapp.net</Targets>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
+            <Name>iTunes / App Store</Name>
+            <Applications>"iTunes"; "App Store"; "iTunes Helper"; "com.apple.iCloudHelper"; softwareupdate; storeaccountd; storeinappd; storeassetd;</Applications>
+            <Targets>*.cdn-apple.com; *apple.com.akadns.net; *.apple.com; *.akamaiedge.net; apple.xdwscache.ourglb0.com</Targets>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
+            <Name>iTunes / App Store (Download)</Name>
+            <Applications>storedownloadd;</Applications>
+            <Targets>*.cdn-apple.com; *apple.com.akadns.net; *.apple.com; *.akamaiedge.net; apple.xdwscache.ourglb0.com</Targets>
+            <Action type="Direct"/>
+        </Rule>
+        <Rule enabled="true">
+            <Name>OS X Builtin Services</Name>
+            <Applications>"Contacts"; "Calendar"; "Messages"; "Notes"; "Reminders"; accountsd; imagent; CalendarAgent; "com.apple.AddressBook.ContactsAccountsService"; "com.apple.AddressBook.InternetAccountsBridge"; SocialPushAgent; "com.apple.WebKit.Networking"; "Spotlight Networking"; "Spotlight Web Content"; SpotlightNetHelper</Applications>
+            <Targets>*.google.com; *.gstatic.com; *.googleusercontent.com; *.twitter.com; *.facebook.com</Targets>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Gravatar</Name>
+            <Targets>*.gravatar.com</Targets>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Dropbox</Name>
+            <Targets>*.dropbox.com</Targets>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Github</Name>
+            <Applications>"SourceTree"; "Github Desktop"; git; ssh; git-remote-https</Applications>
+            <Targets>*.github.com; github-cloud.s3.amazonaws.com</Targets>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Foreign CDNs</Name>
+            <Targets>*.cloudfront.net; *.edgecastcdn.net; *.akamaihd.net; *.gstatic.com</Targets>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Default</Name>
+            <Action type="Direct"/>
+        </Rule>
+    </RuleList>
+</ProxifierProfile>
