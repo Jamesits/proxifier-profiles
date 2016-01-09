@@ -89,7 +89,7 @@
         <Rule enabled="true">
             <Name>Steam CDN</Name>
             <Applications>"Steam"; steam_osx; "Steam Helper"</Applications>
-            <Targets>cdn.akamai.steamstatic.com</Targets>
+            <Targets>*.steamstatic.com; *.akamaihd.net; *.akamai.net</Targets>
             <Action type="Proxy">100</Action>
         </Rule>
         <Rule enabled="true">
