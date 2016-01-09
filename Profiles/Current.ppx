@@ -82,13 +82,13 @@
         </Rule>
         <Rule enabled="true">
             <Name>Steam</Name>
-            <Applications>"Steam"; steam_osx; "Steam Helper"</Applications>
+            <Applications>"Steam"; steam_osx; "Steam Helper"; steamcmd</Applications>
             <Targets>*.steampowered.com; *.steamcommunity.com</Targets>
             <Action type="Direct"/>
         </Rule>
         <Rule enabled="true">
             <Name>Steam CDN</Name>
-            <Applications>"Steam"; steam_osx; "Steam Helper"</Applications>
+            <Applications>"Steam"; steam_osx; "Steam Helper"; steamcmd</Applications>
             <Targets>*.steamstatic.com; *.akamaihd.net; *.akamai.net</Targets>
             <Action type="Proxy">100</Action>
         </Rule>
