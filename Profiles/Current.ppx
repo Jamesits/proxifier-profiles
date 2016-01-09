@@ -63,7 +63,7 @@
             <Action type="Proxy">100</Action>
         </Rule>
         <Rule enabled="true">
-            <Name>brew</Name>
+            <Name>Homebrew</Name>
             <Applications>brew; curl</Applications>
             <Targets>homebrew.bintray.com; dl.bintray.com; *.brew.sh; *.caskroom.io</Targets>
             <Action type="Proxy">100</Action>
