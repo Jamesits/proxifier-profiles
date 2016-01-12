@@ -76,7 +76,7 @@
         </Rule>
         <Rule enabled="true">
             <Name>Atom</Name>
-            <Applications>"Atom"; "Atom Helper"; apm; npm</Applications>
+            <Applications>"Atom"; "Atom Helper"; apm; npm; node</Applications>
             <Targets>*.atom.io</Targets>
             <Action type="Proxy">100</Action>
         </Rule>
