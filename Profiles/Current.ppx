@@ -77,7 +77,7 @@
         <Rule enabled="true">
             <Name>Atom</Name>
             <Applications>"Atom"; "Atom Helper"; apm; npm; node</Applications>
-            <Targets>*.atom.io</Targets>
+            <Targets>*.atom.io; *.s3.amazonaws.com; codeload.github.com</Targets>
             <Action type="Proxy">100</Action>
         </Rule>
         <Rule enabled="true">
