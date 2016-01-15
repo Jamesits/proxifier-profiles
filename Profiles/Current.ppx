@@ -144,7 +144,7 @@
         </Rule>
         <Rule enabled="true">
             <Name>Foreign CDNs</Name>
-            <Targets>*.cloudfront.net; *.edgecastcdn.net; *.akamaihd.net; *.gstatic.com</Targets>
+            <Targets>*.cloudfront.net; *.edgecastcdn.net; *.akamaihd.net; *.gstatic.com; dl.google.com</Targets>
             <Action type="Proxy">100</Action>
         </Rule>
         <Rule enabled="true">
