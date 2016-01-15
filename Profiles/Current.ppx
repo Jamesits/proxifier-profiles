@@ -148,6 +148,11 @@
             <Action type="Proxy">100</Action>
         </Rule>
         <Rule enabled="true">
+            <Name>Android Studio</Name>
+            <Applications>"Android Studio"; gradle; java</Applications>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
             <Name>Default</Name>
             <Action type="Direct"/>
         </Rule>

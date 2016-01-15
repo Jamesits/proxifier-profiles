@@ -26,8 +26,8 @@
     <ChainList/>
     <RuleList>
         <Rule enabled="true">
-            <Name>ShadowsocksX [auto-created]</Name>
-            <Applications>ShadowsocksX</Applications>
+            <Name>Proxy Softwares</Name>
+            <Applications>"ShadowsocksX"; "GoAgentX"; cow; meow; shadowsocks*; ss*; openconnect; "Cisco AnyConnect"; "com.avast.proxy"; privoxy; polipo; proxychains*</Applications>
             <Action type="Direct"/>
         </Rule>
         <Rule enabled="true">
