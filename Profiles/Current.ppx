@@ -77,7 +77,7 @@
         <Rule enabled="true">
             <Name>Atom</Name>
             <Applications>"Atom"; "Atom Helper"; apm; npm; node</Applications>
-            <Targets>*.atom.io; *.s3.amazonaws.com; codeload.github.com</Targets>
+            <Targets>*.atom.io; *.s3.amazonaws.com; codeload.github.com; registry.npmjs.org</Targets>
             <Action type="Proxy">100</Action>
         </Rule>
         <Rule enabled="true">
@@ -106,6 +106,12 @@
             <Name>Microsoft Office</Name>
             <Applications>"Microsoft Word"; "Microsoft Excel"; "Microsoft PowerPoint"; "Microsoft OneNote"; "Microsoft Outlook"; "Microsoft Activity Monitor"; "Microsoft Error Reporting"; "Microsoft Ship Asserts"; "Office365ServiceV2"; "Outlook Profile Manager"; "Open XML for Excel"</Applications>
             <Targets>*.live.com; *.live.net; *.skyprod.akadns.net; *.cloudapp.net</Targets>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Android Studio</Name>
+            <Applications>"Android Studio"; studio</Applications>
+            <Targets>dl.l.google.com</Targets>
             <Action type="Proxy">100</Action>
         </Rule>
         <Rule enabled="true">
@@ -145,11 +151,6 @@
         <Rule enabled="true">
             <Name>Foreign CDNs</Name>
             <Targets>*.cloudfront.net; *.edgecastcdn.net; *.akamaihd.net; *.gstatic.com; dl.google.com</Targets>
-            <Action type="Proxy">100</Action>
-        </Rule>
-        <Rule enabled="true">
-            <Name>Android Studio</Name>
-            <Applications>"Android Studio"; gradle; java</Applications>
             <Action type="Proxy">100</Action>
         </Rule>
         <Rule enabled="true">
