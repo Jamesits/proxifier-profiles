@@ -111,7 +111,7 @@
         <Rule enabled="true">
             <Name>Android Studio</Name>
             <Applications>"Android Studio"; studio</Applications>
-            <Targets>dl.l.google.com</Targets>
+            <Targets>dl.l.google.com; dl.google.com</Targets>
             <Action type="Proxy">100</Action>
         </Rule>
         <Rule enabled="true">
