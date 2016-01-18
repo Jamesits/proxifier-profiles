@@ -27,6 +27,11 @@
             <Port>80</Port>
             <Options>2</Options>
         </Proxy>
+        <Proxy id="102" type="HTTP">
+            <Address>120.52.72.71</Address>
+            <Port>80</Port>
+            <Options>0</Options>
+        </Proxy>
     </ProxyList>
     <ChainList/>
     <RuleList>
@@ -37,7 +42,7 @@
         </Rule>
         <Rule enabled="true">
             <Name>Localhost</Name>
-            <Targets>localhost; 127.0.0.1; ::1; %ComputerName%; James-MBP.local</Targets>
+            <Targets>localhost; 127.0.0.1; ::1; %ComputerName%; *.local</Targets>
             <Action type="Direct"/>
         </Rule>
         <Rule enabled="true">
