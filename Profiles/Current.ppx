@@ -41,6 +41,11 @@
             <Action type="Direct"/>
         </Rule>
         <Rule enabled="true">
+            <Name>Router Management Website</Name>
+            <Targets>*.tplogin.cn; *.routerlogin.net</Targets>
+            <Action type="Direct"/>
+        </Rule>
+        <Rule enabled="true">
             <Name>Chinese CDNs</Name>
             <Targets>*.ccgslb.com.cn; *.qiniu.com; *.clouddn.com; *.qbox.me; *.staticfile.org; *.upyun.com; *.upaiyun.com; *.upai.com; *.cdnjs.cn; libs.baidu.com; *.baidupcs.com; cdn.geekzu.org; mirrors.ustc.edu.cn; *.lug.ustc.edu.cn; lib.sinaapp.com; libs.useso.com; *.taobao.org;</Targets>
             <Action type="Direct"/>
