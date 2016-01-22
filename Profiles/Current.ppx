@@ -72,7 +72,7 @@
         </Rule>
         <Rule enabled="true">
             <Name>RDP</Name>
-            <Applications>"Microsoft Remote Desktop"</Applications>
+            <Applications>"Microsoft Remote Desktop"; "Microsoft Remote Desktop Beta"</Applications>
             <Action type="Direct"/>
         </Rule>
         <Rule enabled="true">
