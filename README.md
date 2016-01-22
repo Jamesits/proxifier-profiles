@@ -2,7 +2,7 @@
 
 Some profiles for my Proxifier. Useful in China.
 
-I recommend using `Current.ppx` for daily use. `CMCC Optimized.ppx` may not work as it's name announced.
+I recommend using `Current.ppx` for daily use.
 
 Default proxy is a local shadowsocks proxy on port 1080.
 
