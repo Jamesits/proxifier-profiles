@@ -78,7 +78,7 @@
         <Rule enabled="true">
             <Name>Google Desktop Softwares</Name>
             <Applications>"Google Photos Backup"; "Google Music"; "Google Drive"; "Picasa"</Applications>
-            <Targets>*.google.com; *.gstatic.com; *.googleusercontent.com</Targets>
+            <Targets>*.google.com; *.gstatic.com; *.googleusercontent.com; *.googleapis.com</Targets>
             <Action type="Proxy">100</Action>
         </Rule>
         <Rule enabled="true">
