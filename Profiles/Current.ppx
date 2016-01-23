@@ -158,6 +158,13 @@
             <Action type="Proxy">100</Action>
         </Rule>
         <Rule enabled="true">
+            <Name>Gmail</Name>
+            <Applications>"Mail"; "Airmail 2"</Applications>
+            <Targets>*.google.com; *.gstatic.com; *.googleusercontent.com; *.gmail.com</Targets>
+            <Ports>80; 443; 465; 587; 993; 995; </Ports>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
             <Name>Gravatar</Name>
             <Targets>*.gravatar.com</Targets>
             <Action type="Proxy">100</Action>
