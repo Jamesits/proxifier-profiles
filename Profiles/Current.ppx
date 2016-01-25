@@ -95,7 +95,7 @@
         </Rule>
         <Rule enabled="true">
             <Name>TeamViewer</Name>
-            <Applications>"TeamViewer"</Applications>
+            <Applications>"TeamViewer"; TeamViewer_Servi</Applications>
             <Targets>*.teamviewer.com</Targets>
             <Action type="Proxy">100</Action>
         </Rule>
@@ -135,8 +135,8 @@
         </Rule>
         <Rule enabled="true">
             <Name>Android Studio</Name>
-            <Applications>"Android Studio"; studio</Applications>
-            <Targets>dl.l.google.com; dl.google.com</Targets>
+            <Applications>"Android Studio"; studio; java</Applications>
+            <Targets>dl.l.google.com; dl.google.com; dl-ssl.l.google.com</Targets>
             <Action type="Proxy">100</Action>
         </Rule>
         <Rule enabled="true">
@@ -182,7 +182,7 @@
         </Rule>
         <Rule enabled="true">
             <Name>Foreign CDNs</Name>
-            <Targets>*.cloudfront.net; *.edgecastcdn.net; *.akamaihd.net; *.gstatic.com; dl.google.com</Targets>
+            <Targets>*.cloudfront.net; *.edgecastcdn.net; *.akamaihd.net; *.gstatic.com; dl.l.google.com; dl.google.com; dl-ssl.l.google.com</Targets>
             <Action type="Proxy">100</Action>
         </Rule>
         <Rule enabled="true">
