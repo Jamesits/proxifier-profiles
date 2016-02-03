@@ -147,7 +147,7 @@
         <Rule enabled="true">
             <Name>Minecraft</Name>
             <Applications>"Minecraft Updater"; launcher; nativeUpdater</Applications>
-            <Targets>launchermeta.mojang.com; *.cloudfront.net; s3.amazonaws.com</Targets>
+            <Targets>*.mojang.com; *.minecraft.net; *.elb.amazonaws.com; *.cloudfront.net; s3.amazonaws.com</Targets>
             <Ports>80; 443</Ports>
             <Action type="Proxy">100</Action>
         </Rule>
