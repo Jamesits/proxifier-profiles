@@ -140,6 +140,7 @@
         <Rule enabled="true">
             <Name>Netease Music</Name>
             <Applications>"NeteaseMusic"</Applications>
+            <Targets>music.163.com; *.music.126.net.wscdns.com</Targets>
             <Ports>80; 443</Ports>
             <Action type="Direct"/>
         </Rule>
