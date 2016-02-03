@@ -9,6 +9,7 @@ Rules:
     - Localhost
     - Link-local addresses and LANs (with IPv6 considered)
     - Common router management addresses (IPs and fake domains)
+    - P2P download softwares
     - Chinese sites, via:
         - Common CDNs
         - Multimedia content providers
@@ -29,6 +30,17 @@ Rules:
         - Common foreign CDNs
 
 These rules are split into individual items so you can simply enable or disable one using Proxifier's built-in mechanism, or redirect any of them to another proxy.
+
+## Installation
+
+By default Proxifier's profiles are stored under `~/Library/Application Support/Proxifier/Profiles`. Download `Profiles/Current.ppx` and put it in, then you should be able to load it via dropdown menu on the right of Proxifier's toolbar.
+
+If you want to use Git like me, you can run the following commands in a shell:
+
+```shell
+git clone https://github.com/Jamesits/proxifier-profiles.git ~/.proxifier-profiles
+ln -s ~/.proxifier-profiles/Profiles/Current.ppx ~/Library/Application Support/Proxifier/Profiles/jamesits-profile.ppx
+```
 
 ## Notes
 - `Profiles/Current.ppx` is what I use daily. Others are for debugging so you can safely delete them.
