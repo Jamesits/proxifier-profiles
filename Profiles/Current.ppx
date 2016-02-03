@@ -42,7 +42,8 @@
         </Rule>
         <Rule enabled="true">
             <Name>Router Management Website</Name>
-            <Targets>*.tplogin.cn; *.routerlogin.net</Targets>
+            <Targets>*.tplogin.cn; *.routerlogin.net; www.miwifi.com; mifi.zmifi.com; 192.168.*.1;</Targets>
+            <Ports>80; 443</Ports>
             <Action type="Direct"/>
         </Rule>
         <Rule enabled="true">
