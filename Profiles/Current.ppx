@@ -194,6 +194,12 @@
             <Action type="Proxy">100</Action>
         </Rule>
         <Rule enabled="true">
+            <Name>Wordpress</Name>
+            <Targets>*.wordpress.com; *.wordpress.org; *.wp.com</Targets>
+            <Ports>80; 443</Ports>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
             <Name>Dropbox</Name>
             <Targets>*.dropbox.com</Targets>
             <Ports>80; 443</Ports>
