@@ -92,7 +92,7 @@
         <Rule enabled="true">
             <Name>SourceTree</Name>
             <Applications>"SourceTree"</Applications>
-            <Targets>*.atlassian.com; *.sourcetreeapp.com</Targets>
+            <Targets>*.atlassian.com; *.sourcetreeapp.com; *.edgecastcdn.net</Targets>
             <Ports>80; 443</Ports>
             <Action type="Proxy">100</Action>
         </Rule>
