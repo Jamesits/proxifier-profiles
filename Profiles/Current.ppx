@@ -193,6 +193,12 @@
             <Action type="Proxy">100</Action>
         </Rule>
         <Rule enabled="true">
+            <Name>PyPI</Name>
+            <Targets>pypi.python.org</Targets>
+            <Ports>80; 443</Ports>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
             <Name>Foreign CDNs</Name>
             <Targets>*.cloudfront.net; *.edgecastcdn.net; *.akamaihd.net; s3.amazonaws.com; *.gstatic.com; dl.l.google.com; dl.google.com; dl-ssl.l.google.com</Targets>
             <Action type="Proxy">100</Action>
