@@ -107,6 +107,7 @@
             <Name>TeamViewer</Name>
             <Applications>"TeamViewer"; TeamViewer_Servi</Applications>
             <Targets>*.teamviewer.com</Targets>
+            <Ports>80; 443</Ports>
             <Action type="Proxy">100</Action>
         </Rule>
         <Rule enabled="true">
@@ -133,11 +134,13 @@
         <Rule enabled="true">
             <Name>Telegram</Name>
             <Applications>"Telegram"</Applications>
+            <Ports>443</Ports>
             <Action type="Proxy">100</Action>
         </Rule>
         <Rule enabled="true">
             <Name>Netease Music</Name>
             <Applications>"NeteaseMusic"</Applications>
+            <Ports>80; 443</Ports>
             <Action type="Direct"/>
         </Rule>
         <Rule enabled="true">
@@ -165,6 +168,7 @@
             <Name>iTunes / App Store</Name>
             <Applications>"iTunes"; "App Store"; "iTunes Helper"; "com.apple.iCloudHelper"; softwareupdate; storeaccountd; storeinappd; storeassetd;</Applications>
             <Targets>*.cdn-apple.com; *apple.com.akadns.net; *.apple.com; *.akamaiedge.net; apple.xdwscache.ourglb0.com</Targets>
+            <Ports>80; 443</Ports>
             <Action type="Proxy">100</Action>
         </Rule>
         <Rule enabled="true">
@@ -178,6 +182,7 @@
             <Name>OS X Builtin Services</Name>
             <Applications>"Contacts"; "Calendar"; "Messages"; "Notes"; "Reminders"; accountsd; imagent; CalendarAgent; "com.apple.AddressBook.ContactsAccountsService"; "com.apple.AddressBook.InternetAccountsBridge"; SocialPushAgent; "com.apple.WebKit.Networking"; "Spotlight Networking"; "Spotlight Web Content"; SpotlightNetHelper</Applications>
             <Targets>*.google.com; *.gstatic.com; *.googleusercontent.com; *.twitter.com; *.facebook.com</Targets>
+            <Ports>80; 443</Ports>
             <Action type="Proxy">100</Action>
         </Rule>
         <Rule enabled="true">
