@@ -213,7 +213,7 @@
         <Rule enabled="true">
             <Name>Github</Name>
             <Applications>"SourceTree"; "Github Desktop"; git; ssh; git-remote-https</Applications>
-            <Targets>*.github.com; github-cloud.s3.amazonaws.com</Targets>
+            <Targets>*.github.com; github-cloud.s3.amazonaws.com; *.githubusercontent.com; *.github.io</Targets>
             <Ports>22; 80; 443</Ports>
             <Action type="Proxy">100</Action>
         </Rule>
