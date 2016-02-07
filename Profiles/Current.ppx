@@ -155,7 +155,7 @@
         <Rule enabled="true">
             <Name>Android Studio</Name>
             <Applications>"Android Studio"; studio; java</Applications>
-            <Targets>dl.l.google.com; dl.google.com; dl-ssl.l.google.com</Targets>
+            <Targets>dl.l.google.com; dl.google.com; dl-ssl.l.google.com; repo.typesafe.com; *.elb.amazonaws.com; *.map.fastly.net; dl.bintray.com; *.akamaiedge.net</Targets>
             <Ports>80; 443</Ports>
             <Action type="Proxy">100</Action>
         </Rule>
