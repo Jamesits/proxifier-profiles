@@ -226,6 +226,13 @@
             <Action type="Proxy">100</Action>
         </Rule>
         <Rule enabled="true">
+            <Name>Keybase</Name>
+            <Applications>keybase</Applications>
+            <Targets>keybase.io</Targets>
+            <Ports>80; 443</Ports>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
             <Name>Foreign CDNs</Name>
             <Targets>*.cloudfront.net; *.edgecastcdn.net; *.akamaihd.net; s3.amazonaws.com; *.gstatic.com; dl.l.google.com; dl.google.com; dl-ssl.l.google.com</Targets>
             <Ports>80; 443</Ports>
