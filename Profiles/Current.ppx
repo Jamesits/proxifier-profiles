@@ -221,7 +221,15 @@
         </Rule>
         <Rule enabled="true">
             <Name>PyPI</Name>
+            <Applications>python*; pip*</Applications>
             <Targets>pypi.python.org</Targets>
+            <Ports>80; 443</Ports>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
+            <Name>RubyGems.org</Name>
+            <Applications>ruby; gem;</Applications>
+            <Targets>rubygems.org; global-ssl.fastly.net</Targets>
             <Ports>80; 443</Ports>
             <Action type="Proxy">100</Action>
         </Rule>
