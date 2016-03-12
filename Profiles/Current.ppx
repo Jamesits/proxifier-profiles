@@ -237,7 +237,7 @@
         <Rule enabled="true">
             <Name>RubyGems.org</Name>
             <Applications>ruby; gem;</Applications>
-            <Targets>rubygems.org; global-ssl.fastly.net</Targets>
+            <Targets>*.rubygems.org; *.global-ssl.fastly.net</Targets>
             <Ports>80; 443</Ports>
             <Action type="Proxy">100</Action>
         </Rule>
