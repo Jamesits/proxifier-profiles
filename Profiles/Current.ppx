@@ -68,8 +68,8 @@
             <Action type="Direct"/>
         </Rule>
         <Rule enabled="true">
-            <Name>Thunder</Name>
-            <Applications>"Thunder"</Applications>
+            <Name>BT Download Softwares</Name>
+            <Applications>"Thunder"; "Transmission"; "BitTorrent"; "uTorrent"</Applications>
             <Action type="Direct"/>
         </Rule>
         <Rule enabled="true">
