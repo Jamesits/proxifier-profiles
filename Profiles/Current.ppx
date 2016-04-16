@@ -149,7 +149,7 @@
         <Rule enabled="true">
             <Name>Java</Name>
             <Applications>"Android Studio"; studio; java; JavaApplicationStub</Applications>
-            <Targets>dl.l.google.com; dl.google.com; dl-ssl.l.google.com; repo.typesafe.com; *.maven.org; *.sonatype.org; *.elb.amazonaws.com; sonatype.map.fastly.net; dl.bintray.com; *.akamaiedge.net</Targets>
+            <Targets>dl.l.google.com; dl.google.com; dl-ssl.l.google.com; repo.typesafe.com; *.maven.org; *.sonatype.org; *.elb.amazonaws.com; sonatype.map.fastly.net; dl.bintray.com; *.akamaiedge.net; *.clojars.org</Targets>
             <Ports>80; 443</Ports>
             <Action type="Proxy">100</Action>
         </Rule>
@@ -252,6 +252,12 @@
             <Name>Spotify</Name>
             <Applications>"Spotify"</Applications>
             <Targets>*.spotify.com; *.scdn.co; *.mixpanel.com; *.adjust.com; *.scorecardresearch.com</Targets>
+            <Ports>80; 443</Ports>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
+            <Name>WiFiPineapple.com</Name>
+            <Targets>WiFiPineapple.com</Targets>
             <Ports>80; 443</Ports>
             <Action type="Proxy">100</Action>
         </Rule>
