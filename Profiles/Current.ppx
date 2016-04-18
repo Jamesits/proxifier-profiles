@@ -129,7 +129,7 @@
         <Rule enabled="true">
             <Name>Telegram</Name>
             <Applications>"Telegram"</Applications>
-            <Ports>443</Ports>
+            <Ports>80; 443</Ports>
             <Action type="Proxy">100</Action>
         </Rule>
         <Rule enabled="true">
