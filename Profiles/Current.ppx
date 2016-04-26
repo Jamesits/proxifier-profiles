@@ -149,7 +149,7 @@
         <Rule enabled="true">
             <Name>Java</Name>
             <Applications>"Android Studio"; studio; java; JavaApplicationStub</Applications>
-            <Targets>dl.l.google.com; dl.google.com; dl-ssl.l.google.com; repo.typesafe.com; *.maven.org; *.sonatype.org; *.elb.amazonaws.com; sonatype.map.fastly.net; dl.bintray.com; *.akamaiedge.net; *.clojars.org</Targets>
+            <Targets>dl.l.google.com; dl.google.com; dl-ssl.l.google.com; *.googleapis.com; repo.typesafe.com; *.maven.org; *.sonatype.org; *.elb.amazonaws.com; sonatype.map.fastly.net; dl.bintray.com; *.akamaiedge.net; *.clojars.org</Targets>
             <Ports>80; 443</Ports>
             <Action type="Proxy">100</Action>
         </Rule>
