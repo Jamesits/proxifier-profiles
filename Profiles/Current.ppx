@@ -37,7 +37,7 @@
         </Rule>
         <Rule enabled="true">
             <Name>Localhost</Name>
-            <Targets>localhost; 127.0.0.1; ::1; %ComputerName%; *.local</Targets>
+            <Targets>localhost; 127.0.0.1; ::1; 0.0.0.0; %ComputerName%; *.local</Targets>
             <Action type="Direct"/>
         </Rule>
         <Rule enabled="true">
