@@ -99,7 +99,7 @@
         </Rule>
         <Rule enabled="true">
             <Name>Google Desktop Softwares</Name>
-            <Applications>"Google Photos Backup"; "Google Music"; "Google Drive"; "Picasa"</Applications>
+            <Applications>"Google Photos Backup"; "Google Music"; "Google Drive"; "Picasa"; "Insync"</Applications>
             <Targets>*.google.com; *.gstatic.com; *.googleusercontent.com; *.googleapis.com</Targets>
             <Ports>80; 443</Ports>
             <Action type="Proxy">100</Action>
