@@ -32,7 +32,7 @@
     <RuleList>
         <Rule enabled="true">
             <Name>Proxy Softwares</Name>
-            <Applications>"ShadowsocksX"; "GoAgentX"; cow; meow; shadowsocks*; ss*; openconnect; "Cisco AnyConnect"; "com.avast.proxy"; privoxy; polipo; proxychains*; "Surge"; LLDBFrontend; tcproute*</Applications>
+            <Applications>"ShadowsocksX"; "GoAgentX"; cow; meow; shadowsocks*; ss*; openconnect; "Cisco AnyConnect"; "com.avast.proxy"; privoxy; polipo; proxychains*; "Surge"; LLDBFrontend; tcproute*; tincd</Applications>
             <Action type="Direct"/>
         </Rule>
         <Rule enabled="true">
