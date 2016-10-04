@@ -127,7 +127,7 @@
         </Rule>
         <Rule enabled="true">
             <Name>Telegram</Name>
-            <Applications>"Telegram"</Applications>
+            <Applications>"Telegram"; telegram-cli</Applications>
             <Ports>80; 443</Ports>
             <Action type="Proxy">100</Action>
         </Rule>
