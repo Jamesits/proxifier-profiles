@@ -22,11 +22,6 @@
             <Port>1080</Port>
             <Options>0</Options>
         </Proxy>
-        <Proxy id="101" type="HTTPS">
-            <Address>120.198.243.52</Address>
-            <Port>80</Port>
-            <Options>2</Options>
-        </Proxy>
     </ProxyList>
     <ChainList/>
     <RuleList>
