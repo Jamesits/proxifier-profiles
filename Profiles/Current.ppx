@@ -98,7 +98,7 @@
         <Rule enabled="true">
             <Name>Atom</Name>
             <Applications>"Atom"; "Atom Helper"; apm; npm; node</Applications>
-            <Targets>*.atom.io; *.s3.amazonaws.com; codeload.github.com; registry.npmjs.org</Targets>
+            <Targets>atom.io; *.atom.io; *.s3.amazonaws.com; codeload.github.com; registry.npmjs.org</Targets>
             <Ports>80; 443</Ports>
             <Action type="Proxy">100</Action>
         </Rule>
